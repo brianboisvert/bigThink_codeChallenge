@@ -10,9 +10,9 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
-    @data = @video.usages.map do |usage|
-      [usage.duration]
-    end
+    # @data = @video.usages.map do |usage|
+    #   [usage.duration]
+    # end
   end
 
   # GET /videos/new
