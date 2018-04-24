@@ -1,18 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div>
+  <div style="color:DarkBlue">
+    <h1>Video Retention</h1>
+    <h3>Number of Viewers Vs. % Time Watched</h3>
+  </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @video.title %>
-</p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Link:</strong>
-  <%= @video.link %>
-</p>
+  <p>
+    <strong>Title:</strong>
+    <%= @video.title %>
+  </p>
+  
+  <p>
+    <strong>Duration:</strong>
+    <%= @video.duration %> Seconds
+  </p>
 
-<p>
-  <strong>Duration:</strong>
-  <%= @video.duration %>
-</p>
+  <p>
+    <iframe width="560" height="349" src="<%= @video.link %>"></iframe>
+  </p>
 
-<%= line_chart @video.data %>
+
+  <%= line_chart @video.data %>
+
+</div>
