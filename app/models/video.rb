@@ -2,6 +2,8 @@ class Video < ApplicationRecord
   has_many :usages
   has_many :users, through: :usages
 
+  # scope :active_videos, -> {where(active: true)}
+  # scope :inactive_videos, -> {where(active: false)}
   validates :title, presence: :true
   validates :link, presence: :true
   validates :duration, presence: :true

@@ -24,6 +24,22 @@ RSpec.describe Video, type: :model do
 
   end
 
-  context 'scope tests' do
-  end
+  # context 'scope tests' do
+  #   let (:params) {{title: "Fake Title", link: "https://fakelink.com", duration: 1000}}
+  #   before(:each) do
+  #     Video.new(params).save
+  #     Video.new(params).save
+  #     Video.new(params.merge(active: true)).save
+  #     Video.new(params.merge(active: false)).save
+  #     Video.new(params.merge(active: false)).save
+  #   end
+  #
+  #   it 'should return active videos' do
+  #     expect (Video.active_videos.size).to eq(3)
+  #   end
+  #
+  #   it 'should return inactive videos' do
+  #     expect (Video.inactive_videos.size).to eq(2)
+  #   end
+  # end
 end
