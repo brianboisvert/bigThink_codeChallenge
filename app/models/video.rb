@@ -2,6 +2,7 @@ class Video < ApplicationRecord
   has_many :usages
   has_many :users, through: :usages
 
+# Iterate through video's usages and increment "final" in each % bucket
   def data
     final = [["25%", 0], ["50%", 0], ["75%", 0], ["100%", 0]]
     self.usages.each do |usage|
@@ -21,8 +22,6 @@ class Video < ApplicationRecord
          final[0][1] += 1
       end
     end
-
-
     return final
   end
 end
