@@ -8,7 +8,7 @@ All retention data is seeded and is not determined by real-life instances of a u
 ### How it was made
 This is a full-stack Ruby on Rails application. It leverages ChartKick and Chart.JS for the graph, a little bit of CSS for styling, and the SimpleCov gem to determine test coverage.
 
-### Getting Started
+## Getting Started
 1. Clone this repository to your local devise
 2. run `bundle` to install all gems
 3. run `rake db:migrate db:seed` in your command line to perform all migrations and to seed the data
