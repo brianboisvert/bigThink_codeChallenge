@@ -11,7 +11,9 @@ This is a full-stack Ruby on Rails application. It leverages ChartKick and Chart
 ### Getting Started
 1. Clone this repository to your local devise
 2. run `bundle` to install all gems
-3. Navigate to `http://localhost:3000/videos/1` to view the first video. There are currently only two seeded videos.
+3. run `rake db:migrate db:seed` in your command line to perform all migrations and to seed the data
+4. run `rails s` to run the Rails server
+4. Navigate to `http://localhost:3000/videos/1` to view the first video. There are currently only two seeded videos.
 
 ## Running the Tests
 Run `RSPEC` in your terminal to see all tests passing.
