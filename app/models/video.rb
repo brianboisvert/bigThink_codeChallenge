@@ -2,6 +2,10 @@ class Video < ApplicationRecord
   has_many :usages
   has_many :users, through: :usages
 
+  validates :title, presence: :true
+  validates :link, presence: :true
+  validates :duration, presence: :true
+
 # Iterate through video's usages and increment "final" in each % bucket
   def data
     final = [["25%", 0], ["50%", 0], ["75%", 0], ["100%", 0]]
